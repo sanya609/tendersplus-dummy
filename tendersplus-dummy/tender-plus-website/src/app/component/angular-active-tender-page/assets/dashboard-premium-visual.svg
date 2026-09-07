@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-label="Premium dashboard analytics illustration">
+  <defs>
+    <linearGradient id="shell" x1="45" y1="54" x2="372" y2="363" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f04bff"/>
+      <stop offset=".38" stop-color="#4d2fff"/>
+      <stop offset=".74" stop-color="#0049ff"/>
+      <stop offset="1" stop-color="#20e6ff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="96" y1="126" x2="329" y2="314" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#681dff" stop-opacity=".9"/>
+      <stop offset=".5" stop-color="#0836ce" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#051164" stop-opacity=".86"/>
+    </linearGradient>
+    <linearGradient id="line" x1="113" y1="248" x2="214" y2="158" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff5df5"/>
+      <stop offset=".52" stop-color="#6af4ff"/>
+      <stop offset="1" stop-color="#27fff5"/>
+    </linearGradient>
+    <linearGradient id="barPink" x1="250" y1="140" x2="346" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fb4dff"/>
+      <stop offset="1" stop-color="#ff57c8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" values="0 0 0 0 0.32 0 0 0 0 0.42 0 0 0 0 1 0 0 0 .8 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="420" height="420" fill="none"/>
+  <g filter="url(#glow)">
+    <path d="M73 82c8-17 24-28 43-31l222-29c31-4 59 21 59 52v235c0 29-24 52-53 51l-238-11c-26-1-47-22-47-48V126c0-16 5-31 14-44Z" fill="url(#shell)" opacity=".42"/>
+    <path d="M77 91c8-15 22-25 39-27l220-28c25-3 47 16 47 42v228c0 24-20 44-45 43l-232-11c-21-1-38-18-38-40V130c0-14 3-27 9-39Z" fill="#080b54" stroke="url(#shell)" stroke-width="7"/>
+    <path d="M80 93c8-13 21-22 36-24l220-28c22-3 42 15 42 37v39L70 151v-21c0-13 3-26 10-37Z" fill="url(#shell)" opacity=".9"/>
+    <circle cx="112" cy="102" r="13" fill="#fff" opacity=".8"/>
+    <circle cx="145" cy="98" r="13" fill="#fff" opacity=".74"/>
+    <circle cx="178" cy="94" r="13" fill="#fff" opacity=".68"/>
+  </g>
+  <g fill="url(#panel)" stroke="#4e6cff" stroke-opacity=".5">
+    <rect x="95" y="141" width="126" height="111" rx="16"/>
+    <rect x="243" y="116" width="120" height="126" rx="16"/>
+    <rect x="95" y="274" width="118" height="76" rx="15"/>
+    <rect x="229" y="266" width="134" height="88" rx="16"/>
+  </g>
+  <path d="M112 227c28-2 24-55 55-50 28 4 19 57 57-17" fill="none" stroke="url(#line)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="112" cy="227" r="6" fill="#ff66fb"/>
+  <circle cx="166" cy="177" r="6" fill="#bffcff"/>
+  <circle cx="224" cy="160" r="12" fill="#dffeff"/>
+  <g stroke-linecap="round" stroke-width="12">
+    <path d="M262 139h82" stroke="url(#barPink)"/>
+    <path d="M262 172h62" stroke="#ff8c51"/>
+    <path d="M262 205h86" stroke="#35b9ff"/>
+    <path d="M262 231h54" stroke="#8a35ff"/>
+    <path d="M112 305h74" stroke="#6f41ff"/>
+    <path d="M112 329h52" stroke="#522bdb"/>
+  </g>
+  <path d="M270 326a31 31 0 1 0 0-62v62Z" fill="#ffcf52"/>
+  <path d="M270 326V264a31 31 0 0 0-16 58Z" fill="#6d3dff"/>
+  <path d="M270 326l28 13a31 31 0 0 0-28-75v62Z" fill="#ff4fa5"/>
+</svg>

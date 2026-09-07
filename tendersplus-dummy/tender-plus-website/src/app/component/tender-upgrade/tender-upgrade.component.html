@@ -1,0 +1,639 @@
+<!-- Ticker -->
+  <div class="ticker">
+    <span class="ticker-badge">● LIVE</span>
+    <div class="ticker-scroll">
+      <div class="ticker-inner" id="tickerInner"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="/logo.svg" alt="TendersPlus logo" class="site-logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">Tenders</a></li>
+        <li><a href="#" class="nav-link">Services</a></li>
+        <li><a href="#" class="nav-link">Pricing</a></li>
+        <li><a href="#" class="nav-link">Resources</a></li>
+        <li><a href="#" class="nav-link">Company</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-outline-blue btn-sm">Login</button>
+        <button class="btn-primary btn-sm">Get Started</button>
+      </div>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#">Home</a><a href="#">Tenders</a><a href="#">Services</a>
+      <a href="#">Pricing</a><a href="#">Resources</a><a href="#">Company</a>
+      <div class="mobile-nav-actions">
+        <button class="btn-outline-blue">Login</button>
+        <button class="btn-primary">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="hero-orb hero-orb-a"></div>
+      <div class="hero-orb hero-orb-b"></div>
+      <div class="hero-orb hero-orb-c"></div>
+      <div class="hero-ring hero-ring-a"></div>
+      <div class="hero-ring hero-ring-b"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-sweep"></div>
+      <span class="hero-spark hero-spark-a"></span>
+      <span class="hero-spark hero-spark-b"></span>
+      <span class="hero-spark hero-spark-c"></span>
+    </div>
+    <div class="container hero-body">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Smart Tender Search & Expert Support Platform
+        </div>
+        <h1>
+          Search &amp; Win <span class="hero-accent">Government</span><br>
+          <span class="hero-accent">Tenders</span> Easily
+        </h1>
+        <p class="hero-sub">Search smarter, discover government tenders across India, bid confidently, and grow your business
+          with expert procurement support.</p>
+
+      </div>
+
+      <div class="hero-search">
+        <div class="search-card">
+          <div class="search-card-hd">🔍 Search Tenders</div>
+          <input class="search-inp" placeholder="Search by keyword, tender ID..." />
+          <button class="btn-primary btn-full">Search</button>
+        </div>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="hero-trust">
+          <div class="trust-avatars" id="trustAvatars"></div>
+          <span class="trust-text"><b>19,500+</b> Business Registered on TendersPlus</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-float">
+          <span class="hero-float-badge">✓</span>
+          <span><b>180,000+</b> Active Tenders</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 64" preserveAspectRatio="none">
+        <path d="M0,48 C480,80 960,0 1440,48 L1440,64 L0,64 Z" fill="#808080" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services-section">
+    <div class="container two-col services-layout">
+      <div class="two-col-left">
+        <p class="eyebrow">What We Do</p>
+        <h2>Complete Government <span class="blue">Procurement Services</span></h2>
+        <p class="section-sub">Discover Opportunities. Grow Your Business.</p>
+        <p class="section-body">From tender discovery to bid submission, TendersPlus helps businesses simplify every stage of government procurement lifecycle.</p>
+        <button class="btn-outline-blue mt-6">Explore Services →</button>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-strip">
+        <div class="stats-heading">
+          <p class="stats-kicker">Impact Snapshot</p>
+          <h2 class="stats-title">Our Impact <span>in Numbers</span></h2>
+          <p class="stats-copy">Empowering businesses across India to discover opportunities, bid with confidence, and navigate government procurement with expert guidance.</p>
+        </div>
+        <div class="stats-grid" id="statsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section section-alt process-section">
+    <div class="container">
+      <div class="section-hd">
+        <p class="eyebrow">Simple Process</p>
+        <h2>How <span class="blue">TendersPlus</span> Works</h2>
+        <p class="section-desc">Four simple steps to winning your first government tender</p>
+      </div>
+      <div class="steps-grid" id="stepsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="section">
+    <div class="container">
+      <div class="section-hd">
+        <p class="eyebrow">Why Choose Us</p>
+        <h2>Advantages with <span class="blue">TendersPlus</span></h2>
+      </div>
+      <div class="adv-grid" id="advGrid"></div>
+    </div>
+  </section>
+
+  <!-- Grow Your Business -->
+  <section class="growth-section" aria-labelledby="growthTitle">
+    <div class="container">
+      <div class="growth-panel">
+        <div class="growth-content">
+          <div class="growth-intro">
+            <p class="eyebrow">Ready to Grow Through Government Procurement</p>
+            <h2 id="growthTitle" class="growth-title-single">Start Your Journey with <span class="growth-highlight">TendersPlus</span></h2>
+            <div class="growth-journey-copy">
+              <p>Whether you’re searching for the right tender, preparing your first bid or expanding your government sales, our experts can support you at every step.</p>
+              <p>Get expert assistance with GeM registration, product listing, tender documentation, bid preparation, vendor assessment and tender submission.</p>
+              <p>From identifying relevant opportunities to submitting compliant bids, TendersPlus helps simplify your complete tender journey.</p>
+            </div>
+          </div>
+
+          <div class="growth-offer growth-journey-offer">
+            <span aria-hidden="true">🎁</span>
+            <div>
+              <strong>Get Your First Service Free — Worth ₹1,999</strong>
+              <p>Experience TendersPlus with a complimentary first service.</p>
+            </div>
+          </div>
+
+          <div class="growth-actions">
+            <button class="btn-primary growth-register" type="button" data-existing-registration>Get Started Today <span aria-hidden="true">&#8594;</span></button>
+            <button class="growth-expert-btn" type="button"><svg class="growth-expert-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M5 13h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2Z"/><path d="M19 13h-3v6h3a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2Z"/><path d="M16 19c0 1.1-.9 2-2 2h-2"/></svg> Talk to a Tender Expert</button>
+          </div>
+          <p class="growth-terms">Applicable to eligible first-time customers. Terms and conditions apply.</p>
+        </div>
+        <div class="growth-visual growth-animation-visual" aria-label="Animated business growth illustration">
+          <div class="growth-animation" id="growthAnimation" role="img" aria-label="Grow your business animation"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Insights -->
+  <section class="section ai-insights-section">
+    <div class="container">
+      <div class="ai-insights-panel">
+        <div class="ai-insights-copy">
+          <p class="eyebrow">New &amp; Powerful</p>
+          <h2>AI-Powered <span class="blue">Tender Insights</span></h2>
+          <p class="section-body">Analyze lengthy tender documents in seconds and get clear, actionable insights on eligibility, requirements, documents, and critical pre-bid checks&mdash;helping you evaluate opportunities and prepare your bid with greater confidence.</p>
+          <button class="ai-download" type="button">Download Sample AI Report <span aria-hidden="true">&#8594;</span></button>
+        </div>
+
+        <div class="ai-visual" aria-label="AI tender insights illustration">
+          <img src="/ai-tender-insights.png" alt="AI tender document analysis illustration" loading="lazy" />
+        </div>
+
+        <div class="ai-feature-strip" aria-label="AI features">
+          <span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l7 3v5c0 5-3.2 8.5-7 10-3.8-1.5-7-5-7-10V6l7-3Z" />
+                <path d="m9 12 2 2 4-5" />
+              </svg>
+            </span>
+            Tender Eligibility
+          </span>
+          <span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 3h7l5 5v13H7z" />
+                <path d="M14 3v5h5" />
+                <path d="M10 13h6" />
+                <path d="M10 17h6" />
+              </svg>
+            </span>
+            Required Documents
+          </span>
+          <span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                <path d="M9 8h7" />
+                <path d="M9 12h7" />
+                <path d="M10 8c4 0 4 5 0 5l5 6" />
+              </svg>
+            </span>
+            Critical Pre-Bid Checks
+          </span>
+          <span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 4h8l1 2h3v17H4V6h3l1-2Z" />
+                <path d="m9 14 2 2 5-6" />
+              </svg>
+            </span>
+            Tender &amp; Financial Insights
+          </span>
+          <span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l7 3v5c0 5-3.2 8.5-7 10-3.8-1.5-7-5-7-10V6l7-3Z" />
+                <path d="m9 12 2 2 4-5" />
+              </svg>
+            </span>
+            Eligibility &amp; Compliance
+          </span>
+          <span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2l1.7 5.2L19 9l-5.3 1.8L12 16l-1.7-5.2L5 9l5.3-1.8L12 2Z" />
+                <path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14Z" />
+              </svg>
+            </span>
+            Final AI Insights
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sources -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-hd">
+        <p class="eyebrow">TENDER SOURCES</p>
+        <h2>Explore Tenders <span class="blue">Across Multiple Sources</span></h2>
+        <p class="section-desc">Access government tenders from GeM, Railways, CPWD, Central &amp; State eTender Portals, PSUs, Defence, and other major procurement sources—all in one place.</p>
+      </div>
+      <div class="sources-grid" id="sourcesGrid"></div>
+      <div class="mobile-carousel-nav sources-mobile-nav" aria-label="Source carousel controls">
+        <button type="button" data-scroll-target="#sourcesGrid" data-direction="-1" aria-label="Previous source">&#8592;</button>
+        <button type="button" data-scroll-target="#sourcesGrid" data-direction="1" aria-label="Next source">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Tenders -->
+  <section class="section latest-tenders-section">
+    <div class="container">
+      <div class="tenders-carousel">
+        <div class="tenders-grid-layout">
+          <div class="tenders-hero">
+            <p class="eyebrow">Live Opportunities</p>
+            <h2>Latest Tender Opportunities <span class="blue">Across India</span></h2>
+            <p class="section-desc">Stay updated with the latest procurement opportunities from government departments, PSUs, Railways, Defence, and more.</p>
+          </div>
+
+          <div class="tenders-cards">
+            <article class="tender-card">
+              <div class="tender-top">
+                <span class="tender-tag tender-tag-hot">Hot</span>
+                <button class="tender-fav" type="button" aria-label="Save medical equipment tender">&#9734;</button>
+              </div>
+              <div class="tender-body">
+                <h3 class="tender-title">Supply of Medical Equipment for Government Hospitals</h3>
+                <a class="tender-dept" href="#">Health &amp; Family Welfare Department</a>
+                <div class="tender-detail-row">
+                  <span class="tender-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.25 7-12a7 7 0 1 0-14 0c0 6.75 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  </span>
+                  <span>Maharashtra</span>
+                </div>
+                <div class="tender-detail-row">
+                  <span class="tender-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+                  </span>
+                  <span>28 May 2025</span>
+                </div>
+              </div>
+              <div class="tender-divider"></div>
+              <div class="tender-value">
+                <span>Estimated Value</span>
+                <strong>&#8377; 2.45 Crore</strong>
+              </div>
+              <a class="tender-link" href="#">View Tender <span aria-hidden="true">&#8594;</span></a>
+            </article>
+
+            <article class="tender-card">
+              <div class="tender-top">
+                <span class="tender-cat tender-tag-closing">Closing Soon</span>
+                <button class="tender-fav" type="button" aria-label="Save boundary wall tender">&#9734;</button>
+              </div>
+              <div class="tender-body">
+                <h3 class="tender-title">Construction of Boundary Wall at Govt. School</h3>
+                <a class="tender-dept" href="#">Rural Development Department</a>
+                <div class="tender-detail-row">
+                  <span class="tender-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.25 7-12a7 7 0 1 0-14 0c0 6.75 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  </span>
+                  <span>Uttar Pradesh</span>
+                </div>
+                <div class="tender-detail-row">
+                  <span class="tender-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+                  </span>
+                  <span>24 May 2025</span>
+                </div>
+              </div>
+              <div class="tender-divider"></div>
+              <div class="tender-value">
+                <span>Estimated Value</span>
+                <strong>&#8377; 68.75 Lakh</strong>
+              </div>
+              <a class="tender-link" href="#">View Tender <span aria-hidden="true">&#8594;</span></a>
+            </article>
+
+            <article class="tender-card">
+              <div class="tender-top">
+                <span class="tender-tag tender-tag-new">New</span>
+                <button class="tender-fav" type="button" aria-label="Save IT hardware tender">&#9734;</button>
+              </div>
+              <div class="tender-body">
+                <h3 class="tender-title">IT Hardware and Peripherals Supply</h3>
+                <a class="tender-dept" href="#">Information Technology Department</a>
+                <div class="tender-detail-row">
+                  <span class="tender-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.25 7-12a7 7 0 1 0-14 0c0 6.75 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  </span>
+                  <span>Karnataka</span>
+                </div>
+                <div class="tender-detail-row">
+                  <span class="tender-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+                  </span>
+                  <span>30 May 2025</span>
+                </div>
+              </div>
+              <div class="tender-divider"></div>
+              <div class="tender-value">
+                <span>Estimated Value</span>
+                <strong>&#8377; 1.12 Crore</strong>
+              </div>
+              <a class="tender-link" href="#">View Tender <span aria-hidden="true">&#8594;</span></a>
+            </article>
+          </div>
+          <div class="latest-tenders-action mt-6">
+            <button class="btn-outline-blue">View All Active Tenders <span aria-hidden="true">&#8594;</span></button>
+          </div>
+          <div class="tender-mobile-nav" aria-label="Tender carousel controls">
+            <button class="tender-mobile-prev" type="button" aria-label="Previous tender">&#8592;</button>
+            <button class="tender-mobile-next" type="button" aria-label="Next tender">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Categories -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-hd">
+        <p class="eyebrow">Find by Your Industry</p>
+        <h2>Browse Tenders <span class="blue">by Category</span></h2>
+        <p class="section-desc">Explore government tenders across multiple industries and categories, discover relevant eProcurement opportunities, and find tenders that match your business faster.</p>
+      </div>
+      <div class="category-carousel" aria-label="Tender categories carousel">
+        <button class="category-nav category-nav-prev" id="categoryPrev" type="button" aria-label="Previous categories">&#8249;</button>
+        <div class="cats-grid" id="catsGrid"></div>
+        <button class="category-nav category-nav-next" id="categoryNext" type="button" aria-label="Next categories">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- States -->
+  <section class="section">
+    <div class="container">
+      <div class="section-hd">
+        <p class="eyebrow">Find Tenders Near You</p>
+        <h2>Find Tenders <span class="blue">by State</span></h2>
+        <p class="section-desc">Search and discover the latest government tender opportunities across all Indian states and Union Territories. Find relevant tenders from GeM, eProcure, CPWD, IREPS, and 100+ procurement sources in one place.</p>
+      </div>
+      <div class="state-carousel" aria-label="State tender carousel">
+        <button class="state-nav state-nav-prev" id="statePrev" type="button" aria-label="Previous states">&#8249;</button>
+        <div class="states-grid" id="statesGrid"></div>
+        <button class="state-nav state-nav-next" id="stateNext" type="button" aria-label="Next states">&#8250;</button>
+      </div>
+    </div>
+  </section>
+  <!-- Relevant Tenders CTA -->
+  <section class="relevant-tenders-cta-section">
+    <div class="container">
+      <div class="relevant-tenders-cta">
+        <div class="relevant-cta-copy">
+          <span class="relevant-cta-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+          </span>
+          <div>
+            <h2>Find More Relevant Tenders</h2>
+            <p>Explore relevant opportunities based on your category and location.</p>
+          </div>
+        </div>
+        <div class="relevant-cta-actions">
+          <button class="relevant-primary" type="button">Explore Tenders <span aria-hidden="true">&#8594;</span></button>
+          <button class="relevant-secondary" type="button"><svg class="relevant-crown-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg> Start Free Trial</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs & News -->
+  <section class="blog-news-section">
+    <div class="blog-news-shell">
+      <div class="blog-block">
+        <div class="blog-block-head">
+          <div>
+            <h2>TendersPlus <span class="heading-purple">Blogs</span></h2>
+            <span class="title-line"></span>
+            <p>Explore expert insights and practical guides on government tenders, GeM registration, eProcurement, tender bidding, required documents, government departments, new projects, procurement opportunities, and more to help businesses navigate government procurement.</p>
+          </div>
+          <button class="blog-view-btn" type="button">View All Blogs <span>›</span></button>
+        </div>
+
+        <button class="blog-arrow blog-arrow-left" type="button" aria-label="Previous blogs">‹</button>
+        <div class="blog-card-grid">
+          <article class="blog-card blog-hero-card blog-card-kerala">
+            <div class="blog-card-media"></div>
+            <div class="blog-card-copy">
+              <span class="blog-pill">e-Tenders Kerala</span>
+              <h3>Complete Vendor Registration Process for Kerala Government Tenders</h3>
+            </div>
+          </article>
+
+          <article class="blog-card blog-hero-card blog-card-cpwd">
+            <div class="blog-card-media">
+              <span class="blog-float-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V9l7-4 7 4v12"/><path d="M9 21v-7h6v7"/></svg>
+              </span>
+            </div>
+            <div class="blog-card-copy">
+              <span class="blog-pill">CPWD</span>
+              <h3>CPWD India: Building the Nation Through Engineering Excellence and Transparency</h3>
+            </div>
+          </article>
+
+          <article class="blog-card blog-hero-card blog-card-maha">
+            <div class="blog-card-media">
+              <span class="blog-float-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg>
+              </span>
+            </div>
+            <div class="blog-card-copy">
+              <span class="blog-pill">Maharashtra</span>
+              <h3>eTender Maharashtra: Vendor Registration and Login Process Guide</h3>
+            </div>
+          </article>
+
+          <article class="blog-card blog-hero-card blog-card-msme">
+            <div class="blog-card-media">
+              <span class="blog-float-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h16"/><path d="M6 21V7h8v14"/><path d="M14 21V11h4v10"/><path d="M9 10h2"/><path d="M9 14h2"/></svg>
+              </span>
+            </div>
+            <div class="blog-card-copy">
+              <span class="blog-pill">MSME</span>
+              <h3>Empowering Growth for MSME's</h3>
+
+            </div>
+          </article>
+        </div>
+        <button class="blog-arrow blog-arrow-right" type="button" aria-label="Next blogs">›</button>
+        <div class="blog-dots" aria-hidden="true"><span class="active"></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="blog-block news-block">
+        <div class="blog-block-head">
+          <div>
+            <h2>Tender <span class="heading-purple">News</span> <span class="sparkle">✦</span> <em>Latest Updates</em></h2>
+            <p>Stay informed with real-time updates on the latest tenders, government projects, and procurement opportunities.</p>
+          </div>
+          <button class="blog-view-btn" type="button">View All News <span>›</span></button>
+        </div>
+
+        <button class="blog-arrow blog-arrow-left" type="button" aria-label="Previous news">‹</button>
+        <div class="news-card-grid">
+          <article class="news-card">
+            <div class="news-img news-img-env"><span class="news-round-icon green">⌁</span></div>
+            <div class="news-body">
+              <span class="news-tag green">Environment</span>
+              <h3>Ludhiana: MC re-floats &#8377;1,144-cr solid waste mgmt tender sans state sanction</h3>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-img news-img-energy"><span class="news-round-icon blue">⚡</span></div>
+            <div class="news-body">
+              <span class="news-tag blue">Energy</span>
+              <h3>1,500MWh battery energy storage system for state</h3>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-img news-img-road"><span class="news-round-icon orange">▴</span></div>
+            <div class="news-body">
+              <span class="news-tag orange">Infrastructure</span>
+              <h3>Madurai corpn floats tender to renovate roads in zone two</h3>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-img news-img-city"><span class="news-round-icon purple">▥</span></div>
+            <div class="news-body">
+              <span class="news-tag purple">Transportation</span>
+              <h3>Centre approves &#8377;3,320 crore to upgrade 154km Ghoti-Trimbak-Palghar highway stretch</h3>
+            </div>
+          </article>
+        </div>
+        <button class="blog-arrow blog-arrow-right" type="button" aria-label="Next news">›</button>
+        <div class="blog-dots" aria-hidden="true"><span class="active"></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-alt testimonials-section">
+    <div class="container">
+      <div class="section-hd">
+        <p class="eyebrow">Success Stories</p>
+        <h2>What Our <span class="blue">Clients Say</span></h2>
+      </div>
+      <div class="tabs-row" id="tabsRow"></div>
+      <div class="testimonial-card">
+        <div class="stars" id="starRating"></div>
+        <p class="testimonial-text" id="testimonialText"></p>
+        <div class="author-row">
+          <div class="author-av" id="authorAv"></div>
+          <div>
+            <div class="author-name" id="authorName"></div>
+            <div class="author-company" id="authorCompany"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-carousel-nav testimonial-mobile-nav" aria-label="Testimonial controls">
+        <button class="testimonial-prev" type="button" aria-label="Previous testimonial">&#8592;</button>
+        <button class="testimonial-next" type="button" aria-label="Next testimonial">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alert Subscribe -->
+  <section class="section alerts-section">
+    <div class="container">
+      <div class="alert-box">
+        <div class="alert-left">
+          <div class="alert-icon-wrap">&#128276;</div>
+          <div>
+            <h3 class="alert-title">Get Daily Tender Alerts</h3>
+            <p class="alert-sub">Never miss a relevant tender opportunity with real-time alerts delivered directly to your inbox, matched to your business requirements.</p>
+          </div>
+        </div>
+        <div class="alert-form">
+          <button class="btn-primary">Register Now<span aria-hidden="true">&#8594;</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="logo footer-logo">
+          <img src="/logo.svg" alt="TendersPlus logo" class="site-logo" />
+        </div>
+        <p class="footer-tagline">India's most trusted government tender support platform.</p>
+        <div class="footer-socials">
+          <a href="#" class="social">💬</a>
+          <a href="#" class="social">✉️</a>
+          <a href="#" class="social">☎️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="#">GeM Registration</a>
+        <a href="#">Tender Bidding</a>
+        <a href="#">MSME Registration</a>
+        <a href="#">Compliance</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Help Center</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 TendersPlus. All rights reserved.</span>
+      <span>Made with care for Indian businesses</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="#" class="whatsapp">💬</a>

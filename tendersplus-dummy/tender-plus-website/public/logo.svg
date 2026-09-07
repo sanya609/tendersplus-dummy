@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="184" height="41" viewBox="0 0 190 45" role="img" aria-label="TendersPlus logo">
+  <defs>
+    <style>
+      .word {
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-size: 38px;
+        font-weight: 900;
+        letter-spacing: 0;
+        fill: #171717;
+      }
+      .brand-purple { fill: #4f36e8; }
+    </style>
+  </defs>
+  <text x="9" y="37" class="word">Tenders</text>
+  <rect x="0" y="0" width="28" height="8" rx="4" class="brand-purple"/>
+  <rect x="12" y="1" width="7" height="17" rx="3.5" class="brand-purple"/>
+  <path class="brand-purple" d="M166 16.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5V24h7.5c2.5 0 4.5 2 4.5 4.5s-2 4.5-4.5 4.5H175v7.5c0 2.5-2 4.5-4.5 4.5s-4.5-2-4.5-4.5V33h-7.5c-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5h7.5v-7.5z"/>
+</svg>
